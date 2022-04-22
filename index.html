@@ -54,7 +54,7 @@
       <section class="main-section">
         <div class="container">
           <h1 class="main-section-text">Эффективные решения для вашего бизнеса</h1>
-          <button class="main-section-btn" type="button">Заказать услугу</button>
+          <button class="main-section-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- section-2 -->
@@ -123,42 +123,41 @@
           <h2 class="about">Чем мы занимаемся</h2>
           <ul class="list about-content">
             <li class="about-item">
-              <div>
-<img            
-src="./image/sec1-img1.jpg"
+              <div class="about-img-container">
+                <img            
+                src="./image/sec1-img1.jpg"
                 alt="человек кодит на пк"
                 width="370"
                 height="294"
                 class="about-img"
               />
-              <p>
+              <p class="about-img-text">
                 Десктопные приложения
               </p>
               </div>
-              
             </li>
             <li class="about-item">
-              <div>
-<img
+              <div class="about-img-container">
+                <img
                 src="./image/sec1-img2.jpg"
                 alt="девушка сидит в ноутбуке"
                 width="370"
                 height="294"
                 class="about-img"
               />
-              <p>Мобильные приложения</p>
+              <p class="about-img-text">Мобильные приложения</p>
               </div>
-              
             </li>
             <li class="about-item">
-              <div>
-               <img src="./image/sec1-img3.jpg"
+              <div class="about-img-container">
+               <img 
+                src="./image/sec1-img3.jpg"
                 alt="девушка работает с палитрой"
                 width="370"
                 height="294"
                 class="about-img"
               />
-              <p>Дизайнерские решения</p>
+              <p class="about-img-text">Дизайнерские решения</p>
               </div>
               
             </li>
@@ -436,5 +435,16 @@ src="./image/sec1-img1.jpg"
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-svg" width="18" height="18">
+            <use href="./image/icons.svg#icon-close">
+            </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
